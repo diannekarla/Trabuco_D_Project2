@@ -1,3 +1,270 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../assets/fonts/sofiapro-light.otf");
+}
+
+
+/* ------- Start Body Section ------- */
+
+body.homepage {
+    background-image: url("../images/img-0.png");
+    background-size: cover;
+}
+
+body {
+  font-family: "Sofia", Helvetica, Arial, sans-serif;
+  margin: 50px 150px;
+  padding: 5px;
+}
+
+p {
+  text-align: justify;
+  color: gray;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+.padding-right {
+  padding-right: 30px;
+}
+
+.padding-left {
+  padding-left: 30px;
+}
+
+
+/* ------- End Body Section ------- */
+
+/* ------- Start General Section ------- */
+
+h2:hover {
+  filter: drop-shadow(5px 3px 1px #FFDFD3);
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+h3{
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #666666;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 300;
+  font-size: 34px;
+  color: #333333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+}
+
 .hidden {
   display: none;
 }
+
+/* ------- End  General Section ------- */
+
+.flex-01 {
+  display: flex;
+  flex-wrap: wrap;
+
+  /*! justify-content: space-evenly; */
+}
+
+.flex-02 {
+  display: flex;
+  /*! flex-direction: column; */
+  flex-wrap: wrap;
+
+}
+
+.flex-02-ctr {
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.flex-03 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  flex: 1;
+}
+
+/* ------- Start Content Section ------- */
+.big {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 70px;
+  float: left;
+  margin: 14px 10px 0px 0px;
+}
+
+
+.container-0 {
+  display: flex;
+  flex: 2 0 0;
+  /* text-align: justify;
+  color: gray;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300; */
+  padding-right: 5%;
+}
+
+.container-1 {
+  display: flex;
+  /* text-align: justify;
+  justify-content: center;
+  color: gray;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300; */
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.container-2 {
+  display: flex;
+  /* text-align: justify;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300; */
+}
+
+.container-3 {
+  display: flex;
+  /* text-align: justify;
+  color: gray;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300; */
+  /*! flex-wrap: wrap; */
+  /*! flex: ; */
+  /*! align-items: center; */
+  /*! justify-content: unset; */
+  /*! flex-direction: column; */
+  width: 40%;
+}
+
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 0.75em gray);
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container-img-1 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 0.75em gray);
+  flex-direction: column;
+}
+
+.container-img-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 0.75em gray);
+
+  flex-direction: column;
+  /*! flex: 1; */
+}
+
+p.img-caption {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #666;
+  margin: 10px;
+}
+
+p.img-caption-2 {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #666;
+  margin: 10px;
+  display: flex;
+}
+
+p.img-caption-3 {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #666;
+  /*! margin: -50px auto 0; */
+  display: flex;
+  /*! align-items: end; */
+  /*! flex-direction: row; */
+  /*! flex: 1; */
+}
+
+.title-grid-left {
+  display: flex;
+  text-align: left;
+  font-weight: 200;
+  font-size: 30px;
+  color: #333333;
+  letter-spacing: 1px;
+  display: flex;
+
+}
+
+.title-grid-con {
+  display: flex;
+  /*! text-align: left; */
+  font-weight: 200;
+  font-size: 30px;
+  color: #333333;
+  letter-spacing: 1px;
+  /*! margin-bottom: ; */
+}
+
+.title-grid-right {
+  text-align: right;
+  font-weight: 200;
+  font-size: 30px;
+  color: #333333;
+  letter-spacing: 1px;
+}
+
+
+
+/* ------- End Content Section ------- */
